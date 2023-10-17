@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
+import GA from "@/components/GA";
 
 export const metadata: Metadata = {
     title: "Morpheus",
@@ -47,11 +48,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        {/*      <meta*/}
-        {/*        name="*/}
-        {/*google-site-verification"*/}
-        {/*        content="Bmom37qzyM1dbaa5zQipybegYSTg4tb9xMj08r0"*/}
-        {/*      />*/}
+        <GA GA_MEASUREMENT_ID='G-R6CM13Q6Z4' />
+        <meta name="google-site-verification" content="TI_-Bmom37qzyM1dbaa5zQipybegYSTg4tb9xMj08r0" />
         <body>
         <Navbar />
         <Toaster />
