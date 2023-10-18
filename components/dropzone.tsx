@@ -460,7 +460,10 @@ export default function Dropzone() {
               description: "Allowed Files: Audio, Video and Images.",
               duration: 5000,
             });
-          }}
+          }
+
+          }
+          useFsAccessApi={false}
       >
         {({ getRootProps, getInputProps }) => (
             <div
